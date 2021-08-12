@@ -1,0 +1,84 @@
+<!-- $Id: global.html,v 1.2 2006/03/29 08:01:03 k-narumi Exp $ -->
+<!--========================================================================-->
+<!-- for Translation                                                        -->
+<!--  title(element)                                                        -->
+<!--  000 Outline ON(argument)                                              -->
+<!--  001 Outline OFF(argument)                                             -->
+<!--  002 GSIC - Global Service Information Center                          -->
+<!--  003 Top                                                               -->
+<!--  004 Back                                                              -->
+<!--  005 New                                                               -->
+<!--  006 logo (attribute)                                                  -->
+<!--========================================================================-->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Techdoc</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link href="../css/global.css" rel="stylesheet" type="text/css">
+<script language="javascript">
+<!---
+var g_name ="closeNavi";
+var link = "Включить описание";  //000
+var link2 = "Выключить описание"; //001
+var linkStr = null;
+function init() {
+	dispNavi.innerHTML = "<a class='window-control-button' href='#dummy' style='width: 150px; visibility: visible; display: inline' onclick='moveNavi(\""+g_name+"\")' name='"+g_name+"'>"+link2+"</a>";
+}
+function moveNavi(navi) {
+	var img;
+	if(navi=="openNavi") {
+//	        img = "<img src='../../../image/b_navi2.png' border='0'>";
+		parent.frame1.cols="25%,*";
+		g_name = "closeNavi";
+		linkStr = link2;
+	}	else {
+//		img = "<img src='../../../image/b_navi1.png' border='0'>";
+		parent.frame1.cols="0%,*";
+		g_name ="openNavi";
+		linkStr = link;
+	}
+	dispNavi.innerHTML = "<a class='window-control-button' href='#dummy' style='width: 150px; visibility: visible; display: inline' onclick='moveNavi(\"" +g_name+ "\")' name='" +g_name+"'>" + linkStr + "</a>";
+}
+//--->
+</script>
+</head>
+<body onload="init()">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="180px"><img alt="логотип" src="../../../image/logo.png" class="logo"></td><!-- 006 -->
+		<td colspan="4"><p class="system-name">Techdoc</p></td><!-- 000 -->
+	</tr>
+	<tr>
+	  <td align="left">
+		  <table border="0" cellspacing="0" cellpadding="0" width="120px">
+			<tr>
+				<td class="window-control-button"><div id="dispNavi"></div></td>
+			</tr>
+		  </table>
+	  </td>
+	  <td align="right">
+		<table border="0" cellspacing="0" cellpadding="0" width="100px">
+			<tr>
+				<td class="popup-button"><a class="popup-button" href="../../index2.html" target="_top">Вверх</a></td><!-- 003 -->
+			</tr>
+		</table></td>
+	  <td align="center">
+		<table border="0" cellspacing="0" cellpadding="0" width="100px">
+			<tr>
+				<td class="popup-button"><a class="popup-button" href="#back" onClick="parent.history.back();return false;">Назад</a></td><!-- 004 -->
+			</tr>
+		</table>
+	  </td>
+	  <td align="left">
+		<table border="0" cellspacing="0" cellpadding="0" width="100px">
+			<tr>
+				<td class="popup-button"><a class="popup-button" href="#dummy" onClick="window.open('../../index2.html', '_blank', 'width=950,height=620,top=30,left=30,status=yes,menubar=yes,resizable=yes,scrollbars=yes');return false;">Новое окно</a></td><!-- 005 -->
+			</tr>
+		</table>
+	  </td>
+	</tr>
+</table>
+</body>
+</html>

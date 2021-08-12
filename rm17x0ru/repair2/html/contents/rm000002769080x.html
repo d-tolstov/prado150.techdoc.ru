@@ -1,0 +1,194 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Techdoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000002769080X"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>СИСТЕМА SFI &gt; Цепь питания ECM</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>для подготовки <a href="#" onclick="openSeePage('ppr','RM000002769080X');return false;">Нажмите здесь</a></h2></p><br clear="all"><a name="RM000002769080X_01"></a><h2>ОПИСАНИЕ</h2><font class="ptxt">При повороте замка зажигания в положение ON на контакт IGSW ECM поступает напряжение аккумуляторной батареи. Выходной сигнал с контакта MREL блока ЕСМ приводит к подаче тока в катушку, что, в свою очередь, приводит к замыканию контактов интегрированного реле (реле EFI) и подаче питания на контакт +B ECM.</font><br><br clear="all"><a name="RM000002769080X_02"></a><h2>СХЕМА СОЕДИНЕНИЙ</h2><div class="full"><br><img src="../../img/a00jys7e01.png" name="A00JYS7E01" alt="A00JYS7E01" border="1" class="full"></div><br clear="all"><br clear="all"><a name="RM000002769080X_03"></a><h2>ПОСЛЕДОВАТЕЛЬНОСТЬ ПРОВЕРКИ</h2><p><dl class="caution"><dt class="cautionTitle">ПРИМЕЧАНИЕ:</dt><dt class="cautionTitle"></dt></dl><dl class="caution"><dd class="caution">Перед выполнением следующей процедуры проверки проверьте предохранители цепей, относящихся к данной системе.</dd></dl></p><a name="RM000002769080X_09_0079"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ECM &ndash; МАССА)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем ЭБУ.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>C64-5 (Е1) - масса<br></td><td>Всегда<br></td><td>Менее 1 Ом<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Подсоедините разъем ECM.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ (ЕСМ - МАССА)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002769080X_09_0080"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">2.ПРОВЕРЬТЕ ECM (НАПРЯЖЕНИЕ НА КОНТАКТЕ IGSW)</td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a00jzyie27.png" name="A00JZYIE27" alt="A00JZYIE27" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">Отсоедините разъем ЭБУ.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Измерьте напряжение в соответствии со значениями, приведенными в таблице.</font><br><p><dl class="spec"><dt class="spec">Номинальное напряжение:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Положение переключателя<br></td><td>Заданные условия<br></td></tr><tr><td>G60-22 (IGSW) - масса<br></td><td>Зажигание включено<br></td><td>11-14 В<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Обозначения на рисунке&nbsp;
+					</span></caption><colgroup align="" width="10%
+			"><col align="center"></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td>*a<br></td><td>Устройство с подсоединенным жгутом проводов<br>(ECM)<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Подсоедините разъем ECM.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM000002769080X_09_0091">Перейдите к шагу 8</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002769080X_09_0083"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">3.ПРОВЕРЬТЕ ИНТЕГРИРОВАННОЕ РЕЛЕ (РЕЛЕ EFI)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Проверьте интегрированное реле (реле EFI) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000003BLB014X_01_0014');return false;">Нажмите здесь</a>).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ИНТЕГРИРОВАННОЕ РЕЛЕ (РЕЛЕ EFI)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002769080X_09_0084"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">4.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ EFI] &ndash; ECM)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Извлеките интегрированное реле (реле EFI) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Отсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Отсоедините разъем ЭБУ.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на обрыв):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1B-4 - G59-23 (+B)<br></td><td>Всегда<br></td><td>Менее 1 Ом<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на короткое замыкание):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1B-4 или G59-23 (+B) - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Подсоедините разъем ECM.</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Подсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Установите интегрированное реле на место.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ EFI] &ndash; ECM)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002769080X_09_0086"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">5.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ EFI] &ndash; АККУМУЛЯТОРНАЯ БАТАРЕЯ)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Извлеките интегрированное реле (реле EFI) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Отсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Отсоедините провод от отрицательного (-) вывода аккумуляторной батареи.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Отсоедините провод от положительного (+) вывода аккумуляторной батареи.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на обрыв):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1C-1 - положительный вывод аккумуляторной батареи<br></td><td>Всегда<br></td><td>Менее 1 Ом<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на короткое замыкание):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="34%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1C-1 или положительный вывод аккумуляторной батареи - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Подсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Установите интегрированное реле на место.</font><br></p></li></ol>
+<ol class="s2">
+<li value="8"><p><font class="ptxt">Вновь подсоедините провод к положительному (+) выводу аккумуляторной батареи.</font><br></p></li></ol>
+<ol class="s2">
+<li value="9"><p><font class="ptxt">Вновь подсоедините провод к отрицательному (-) выводу аккумуляторной батареи.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ EFI] &ndash; АККУМУЛЯТОРНАЯ БАТАРЕЯ)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002769080X_09_0087"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">6.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ EFI] &ndash; МАССА)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Извлеките интегрированное реле (реле EFI) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Отсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1B-3 - масса<br></td><td>Всегда<br></td><td>Менее 1 Ом<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Установите интегрированное реле на место.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ EFI] &ndash; МАССА)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002769080X_09_0088"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">7.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ EFI] &ndash; ECM)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем ECM.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Извлеките интегрированное реле (реле EFI) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Отсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на обрыв):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1B-2 - G60-12 (MREL)<br></td><td>Всегда<br></td><td>Менее 1 Ом<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на короткое замыкание):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1B-2 или G60-12 (MREL) - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Подсоедините разъем ECM.</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Подсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Установите интегрированное реле на место.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ EFI] &ndash; ECM)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ECM (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000VW201IX');return false;">Нажмите здесь</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM000002769080X_09_0091"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">8.ПРОВЕРЬТЕ ИНТЕГРИРОВАННОЕ РЕЛЕ (РЕЛЕ IG2)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Проверьте интегрированное реле (реле IG2) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000003BLB014X_01_0002');return false;">Нажмите здесь</a>).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ПРОВЕРЬТЕ ИНТЕГРИРОВАННОЕ РЕЛЕ (РЕЛЕ IG2)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002769080X_09_0092"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">9.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ IG2] &ndash; ECM)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем ЭБУ.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Извлеките интегрированное реле (реле IG2) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Отсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на обрыв):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1A-5 - G60-22 (IGSW)<br></td><td>Всегда<br></td><td>Менее 1 Ом<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на короткое замыкание):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1A-5 или G60-22 (IGSW) - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Подсоедините разъем ECM.</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Подсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Установите интегрированное реле на место.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ IG2] &ndash; ECM)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002769080X_09_0094"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">10.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ IG2] - АККУМУЛЯТОРНАЯ БАТАРЕЯ)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Извлеките интегрированное реле (реле IG2) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Отсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Отсоедините провод от отрицательного (-) вывода аккумуляторной батареи.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Отсоедините провод от положительного (+) вывода аккумуляторной батареи.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на обрыв):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1C-1 - положительный вывод аккумуляторной батареи<br></td><td>Всегда<br></td><td>Менее 1 Ом<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на короткое замыкание):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="34%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1C-1 или положительный вывод аккумуляторной батареи - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Подсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Установите интегрированное реле на место.</font><br></p></li></ol>
+<ol class="s2">
+<li value="8"><p><font class="ptxt">Вновь подсоедините провод к положительному (+) выводу аккумуляторной батареи.</font><br></p></li></ol>
+<ol class="s2">
+<li value="9"><p><font class="ptxt">Вновь подсоедините провод к отрицательному (-) выводу аккумуляторной батареи.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ IG2] - АККУМУЛЯТОРНАЯ БАТАРЕЯ)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002769080X_09_0095"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">11.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ IG2] - МАССА)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Извлеките интегрированное реле (реле IG2) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Отсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1A-3 - масса<br></td><td>Всегда<br></td><td>Менее 1 Ом<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Установите интегрированное реле на место.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ IG2] &ndash; МАССА)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002769080X_09_0098"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">12.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ IG2] &ndash; ЗАМОК ЗАЖИГАНИЯ)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем замка зажигания.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Извлеките интегрированное реле (реле IG2) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Отсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на обрыв):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1A-1 - G2-6 (IG2)<br></td><td>Всегда<br></td><td>Менее 1 Ом<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на короткое замыкание):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Подключение диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>1A-1 или G2-6 (IG2) - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Вновь подсоедините разъем замка зажигания.</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Подсоедините разъем интегрированного реле.</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Установите интегрированное реле на место.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ (ИНТЕГРИРОВАННОЕ РЕЛЕ [РЕЛЕ IG2] &ndash; ЗАМОК ЗАЖИГАНИЯ)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002769080X_09_0099"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">13.ПРОВЕРЬТЕ ЗАМОК ЗАЖИГАНИЯ В СБОРЕ</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Проверьте замок зажигания в сборе (<a href="#" onclick="javascript:openSeePage('seepage', 'RM00000474M001X');return false;">Нажмите здесь</a>).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ЗАМОК ЗАЖИГАНИЯ В СБОРЕ (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000YK101VX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ (ЗАМОК ЗАЖИГАНИЯ &ndash; АККУМУЛЯТОРНАЯ БАТАРЕЯ)&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

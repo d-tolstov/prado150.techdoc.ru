@@ -1,0 +1,37 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Techdoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000001N9E00LX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; U0100/71 &nbsp;&nbsp; Нарушение связи с ECM/PCM "A"</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; U0114/71 &nbsp;&nbsp; Нарушение связи с блоком управления муфтой полного привода</h3></td></tr><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; U0122/71 &nbsp;&nbsp; Нарушение связи с блоком управления динамикой автомобиля</h3></td></tr><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; U0124/71 &nbsp;&nbsp; Нарушение связи с датчиком бокового ускорения</h3></td></tr><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; U0126/71 &nbsp;&nbsp; Нарушение связи с датчиком угла поворота рулевого колеса</h3></td></tr><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; U0140/71 &nbsp;&nbsp; Нарушение связи с блоком управления кузовом</h3></td></tr></table><p><h2>для подготовки <a href="#" onclick="openSeePage('ppr','RM000001N9E00LX');return false;">Нажмите здесь</a></h2></p><br clear="all"><a name="RM000001N9E00LX_01"></a><h2>ОПИСАНИЕ</h2><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="" width="20%
+			"><col align=""></colgroup><colgroup align="" width="40%
+			"><col align=""></colgroup><colgroup align="" width="40%
+			"><col align=""></colgroup><tr><td align="center">Код DTC<br></td><td align="center">Условие обнаружения DTC<br></td><td align="center">Неисправный участок<br></td></tr><tr><td align="center">U0100/71<br></td><td>При движении со скоростью 30 км/час (19 миль в час) ECM в течение не менее 3 с извещает о прекращении обмена данными на шине CAN.<br></td><td rowspan="6">Система передачи данных CAN<br></td></tr><tr><td align="center">U0114/71<br></td><td>ЭБУ полного привода в течение не менее 3 с извещает о прекращении обмена данными на шине CAN.<br></td></tr><tr><td align="center">U0122/71<br></td><td>ЭБУ системы противоскольжения в течение не менее 3 с извещает о прекращении обмена данными на шине CAN.<br></td></tr><tr><td align="center">U0124/71<br></td><td>Датчик замедления и рысканья в течение не менее 3 с извещает о прекращении обмена данными на шине CAN.<br></td></tr><tr><td align="center">U0126/71<br></td><td>Датчик угла поворота рулевого колеса в течение не менее 3 с извещает о прекращении обмена данными на шине CAN.<br></td></tr><tr><td align="center">U0140/71<br></td><td>Главный ЭБУ кузова в течение не менее 10 с извещает о прекращении обмена данными на шине CAN.<br></td></tr></table><font class="ptxt">Если выводятся DTC, указывающие на нарушение работы системы передачи данных CAN, прежде всего устраните неисправности в системе передачи данных CAN.</font><br><br clear="all"><a name="RM000001N9E00LX_02"></a><h2>ПОСЛЕДОВАТЕЛЬНОСТЬ ПРОВЕРКИ</h2><a name="RM000001N9E00LX_03_0001"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.ПРОВЕРЬТЕ DTC</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Сбросьте коды DTC (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001G7P014X');return false;">Нажмите здесь</a>).</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Проведите дорожные испытания.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Проверьте коды DTC (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001G7P014X');return false;">Нажмите здесь</a>).</font><br><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="70%
+			"><col align=""></colgroup><colgroup align="" width="30%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td>DTC не выводится<br></td><td align="center">А<br></td></tr><tr><td>DTC выводится (для моделей с левосторонним рулевым управлением и системой посадки и запуска)<br></td><td align="center">B<br></td></tr><tr><td>DTC выводится (для моделей с правосторонним рулевым управлением и системой посадки и запуска)<br></td><td align="center">C<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">УКАЗАНИЕ:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">Если одновременно выдаются код DTC нарушения работы системы передачи данных CAN и код DTC, указывающий на неисправность датчика, прежде чем приступать к диагностике датчика, необходимо восстановить нормальную работу системы CAN.</dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ПЕРЕЙДИТЕ К РАЗДЕЛУ "СИСТЕМА ПЕРЕДАЧИ ДАННЫХ CAN" (ПРОЦЕДУРА ПОИСКА НЕИСПРАВНОСТЕЙ) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001RSO04WX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">C</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ПЕРЕЙДИТЕ К РАЗДЕЛУ "СИСТЕМА ПЕРЕДАЧИ ДАННЫХ CAN" (ПРОЦЕДУРА ПОИСКА НЕИСПРАВНОСТЕЙ) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001RSO04YX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">А</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ВЫПОЛНИТЕ ПРОВЕРКУ С ИМИТАЦИЕЙ УСЛОВИЙ ВОЗНИКНОВЕНИЯ НЕИСПРАВНОСТИ (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000003YMJ00BX');return false;">Нажмите здесь</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

@@ -1,0 +1,179 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Techdoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000001D6V0FXX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>СИСТЕМА SFI &gt; Выходная цепь VC</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>для подготовки <a href="#" onclick="openSeePage('ppr','RM000001D6V0FXX');return false;">Нажмите здесь</a></h2></p><br clear="all"><a name="RM000001D6V0FXX_01"></a><h2>ОПИСАНИЕ</h2><font class="ptxt">Для управления микропроцессором блок ECM из напряжения аккумуляторной батареи постоянно формирует напряжение питания 5 В, подаваемое с на контакт +B (BATT). ECM также подает питание к датчикам через выходную цепь VC.</font><br><div class="full"><br><img src="../../img/a0097hpe05.png" name="A0097HPE05" alt="A0097HPE05" border="1" class="full"></div><br clear="all"><font class="ptxt">При коротком замыкании цепи VC микропроцессор блока ECM и датчика, питание к которым подается по цепи VC, не работают вследствие отсутствия питания в цепи VC. При выполнении данных условий система не запускается и контрольная лампа MIL не включается даже в случае неисправности системы.</font><br><p><dl class="reference"><dt class="referenceTitle">УКАЗАНИЕ:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">При нормальных условиях контрольная лампа MIL включается на несколько секунд при включении зажигания (IG). При запуске двигателя контрольная лампа MIL выключается.</dd></dl></p><br clear="all"><a name="RM000001D6V0FXX_02"></a><h2>СХЕМА СОЕДИНЕНИЙ</h2><div class="full"><br><img src="../../img/a0093xne01.png" name="A0093XNE01" alt="A0093XNE01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/a00973te02.png" name="A00973TE02" alt="A00973TE02" border="1" class="full"></div><br clear="all"><br clear="all"><a name="RM000001D6V0FXX_03"></a><h2>ПОСЛЕДОВАТЕЛЬНОСТЬ ПРОВЕРКИ</h2><a name="RM000001D6V0FXX_05_0001"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.ПРОВЕРЬТЕ MIL</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Убедитесь, что контрольная лампа неисправности (MIL) загорается при включении зажигания (IG).</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td align="center">MIL загорается<br></td><td align="center">А<br></td></tr><tr><td align="center">MIL не загорается<br></td><td align="center">B<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">А</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">СИСТЕМА РАБОТАЕТ НОРМАЛЬНО</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">B</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000001D6V0FXX_05_0002"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">2.ПРОВЕРЬТЕ СОСТОЯНИЕ СОЕДИНЕНИЯ МЕЖДУ ПОРТАТИВНЫМ ДИАГНОСТИЧЕСКИМ ПРИБОРОМ И ECM</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Подсоедините портативный диагностический прибор к DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Включите зажигание (IG) и включите портативный диагностический прибор.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Проверьте состояние обмена данными между портативным диагностическим прибором и ЕСМ.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td align="center">Обмен данными осуществляется<br></td><td align="center">А<br></td></tr><tr><td align="center">Обмен данными не осуществляется<br></td><td align="center">B<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">А</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ПЕРЕЙДИТЕ К ДИАГНОСТИКЕ ЦЕПИ MIL (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000WZ10MGX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">B</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000001D6V0FXX_05_0004"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">3.ПРОВЕРЬТЕ КОНТРОЛЬНУЮ ЛАМПУ MIL (КОРПУС ДРОССЕЛЬНОЙ ЗАСЛОНКИ С ЭЛЕКТРОДВИГАТЕЛЕМ В СБОРЕ)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем корпуса дроссельной заслонки с электродвигателем в сборе.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Включите зажигание (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Проверьте контрольную лампу MIL.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td align="center">MIL загорается<br></td><td align="center">А<br></td></tr><tr><td align="center">MIL не загорается<br></td><td align="center">B<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем корпуса дроссельной заслонки с электродвигателем в сборе.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">А</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ КОРПУС ДРОССЕЛЬНОЙ ЗАСЛОНКИ С ЭЛЕКТРОДВИГАТЕЛЕМ В СБОРЕ (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000Q0P039X');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">B</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000001D6V0FXX_05_0005"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">4.ПРОВЕРЬТЕ MIL (ДАТЧИК ПОЛОЖЕНИЯ ПЕДАЛИ АКСЕЛЕРАТОРА)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем датчика положения педали акселератора.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Включите зажигание (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Проверьте контрольную лампу MIL.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td align="center">MIL загорается<br></td><td align="center">А<br></td></tr><tr><td align="center">MIL не загорается<br></td><td align="center">B<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем датчика положения педали акселератора.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">А</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ПЕДАЛЬ АКСЕЛЕРАТОРА В СБОРЕ (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000028B200RX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">B</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000001D6V0FXX_05_0019"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">5.ПРОВЕРЬТЕ КОНТРОЛЬНУЮ ЛАМПУ MIL (ДАТЧИК ПОЛОЖЕНИЯ РАСПРЕДВАЛА ВПУСКНЫХ КЛАПАНОВ РЯДА 1)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем датчика положения распредвала (впускных клапанов ряда 1).</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Включите зажигание (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Проверьте контрольную лампу MIL.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td align="center">MIL загорается<br></td><td align="center">А<br></td></tr><tr><td align="center">MIL не загорается<br></td><td align="center">B<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем датчика положения распредвала (впускных клапанов ряда 1).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">А</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ДАТЧИК ПОЛОЖЕНИЯ РАСПРЕДВАЛА (ВПУСКНЫХ КЛАПАНОВ РЯДА 1) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000028AM00QX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">B</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000001D6V0FXX_05_0021"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">6.ПРОВЕРЬТЕ КОНТРОЛЬНУЮ ЛАМПУ MIL (ДАТЧИК ПОЛОЖЕНИЯ РАСПРЕДВАЛА ВПУСКНЫХ КЛАПАНОВ РЯДА 2)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем датчика положения распредвала (впускных клапанов ряда 2).</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Включите зажигание (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Проверьте контрольную лампу MIL.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td align="center">MIL загорается<br></td><td align="center">А<br></td></tr><tr><td align="center">MIL не загорается<br></td><td align="center">B<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем датчика положения распредвала (впускных клапанов ряда 2).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">А</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ДАТЧИК ПОЛОЖЕНИЯ РАСПРЕДВАЛА (ВПУСКНЫХ КЛАПАНОВ РЯДА 2) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000028AM00QX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">B</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000001D6V0FXX_05_0028"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">7.ПРОВЕРЬТЕ КОНТРОЛЬНУЮ ЛАМПУ MIL (ДАТЧИК ПОЛОЖЕНИЯ РАСПРЕДВАЛА ВЫПУСКНЫХ КЛАПАНОВ РЯДА 1)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем датчика положения распредвала (выпускных клапанов ряда 1).</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Включите зажигание (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Проверьте контрольную лампу MIL.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td align="center">MIL загорается<br></td><td align="center">А<br></td></tr><tr><td align="center">MIL не загорается<br></td><td align="center">B<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем датчика положения распредвала (выпускных клапанов ряда 1).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">А</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ДАТЧИК ПОЛОЖЕНИЯ РАСПРЕДВАЛА (ВЫПУСКНЫХ КЛАПАНОВ РЯДА 1) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000028AM00QX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">B</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000001D6V0FXX_05_0029"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">8.ПРОВЕРЬТЕ КОНТРОЛЬНУЮ ЛАМПУ MIL (ДАТЧИК ПОЛОЖЕНИЯ РАСПРЕДВАЛА ВЫПУСКНЫХ КЛАПАНОВ РЯДА 2)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем датчика положения распредвала (выпускных клапанов ряда 2).</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Включите зажигание (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Проверьте контрольную лампу MIL.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td align="center">MIL загорается<br></td><td align="center">А<br></td></tr><tr><td align="center">MIL не загорается<br></td><td align="center">B<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем датчика положения распредвала (выпускных клапанов ряда 2).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">А</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ДАТЧИК ПОЛОЖЕНИЯ РАСПРЕДВАЛА (ВЫПУСКНЫХ КЛАПАНОВ РЯДА 2) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000028AM00QX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">B</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000001D6V0FXX_05_0030"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">9.ПРОВЕРЬТЕ КОНТАКТНЫЙ ДАТЧИК ДАВЛЕНИЯ МАСЛА УСИЛИТЕЛЯ РУЛЕВОГО УПРАВЛЕНИЯ</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем контактного датчика давления масла усилителя рулевого управления.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Включите зажигание (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Проверьте контрольную лампу MIL.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td align="center">MIL загорается<br></td><td align="center">А<br></td></tr><tr><td align="center">MIL не загорается<br></td><td align="center">B<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем контактного датчика давления масла усилителя рулевого управления.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">А</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ КОНТАКТНЫЙ ДАТЧИК ДАВЛЕНИЯ жидкости для механизма рулевого управления с усилителем (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000003BJ400IX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">B</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000001D6V0FXX_05_0031"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">10.ПРОВЕРЬТЕ КОМПЛЕКТ КЛАПАНА СИСТЕМЫ СНИЖЕНИЯ ТОКСИЧНОСТИ ОТРАБОТАВШИХ ГАЗОВ</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем комплекта клапана системы снижения токсичности отработавших газов.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Включите зажигание (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Проверьте контрольную лампу MIL.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td align="center">MIL загорается<br></td><td align="center">А<br></td></tr><tr><td align="center">MIL не загорается<br></td><td align="center">B<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем комплекта клапана системы снижения токсичности отработавших газов.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">А</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ КОМПЛЕКТ КЛАПАНА СИСТЕМЫ СНИЖЕНИЯ ТОКСИЧНОСТИ ОТРАБОТАВШИХ ГАЗОВ (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000030WH018X');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">B</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000001D6V0FXX_05_0032"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">11.ПРОВЕРЬТЕ КОМПЛЕКТ КЛАПАНА СИСТЕМЫ СНИЖЕНИЯ ТОКСИЧНОСТИ ОТРАБОТАВШИХ ГАЗОВ № 2</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем комплекта клапана системы снижения токсичности отработавших газов № 2.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Включите зажигание (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Проверьте контрольную лампу MIL.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="" width="50%
+			"><col align=""></colgroup><colgroup align="" width="50%
+			"><col align=""></colgroup><tr><td align="center">Результат<br></td><td align="center">Следующий шаг<br></td></tr><tr><td align="center">MIL загорается<br></td><td align="center">А<br></td></tr><tr><td align="center">MIL не загорается<br></td><td align="center">B<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем комплекта клапана системы снижения токсичности отработавших газов № 2.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">А</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ КОМПЛЕКТ КЛАПАНА СИСТЕМЫ СНИЖЕНИЯ ТОКСИЧНОСТИ ОТРАБОТАВШИХ ГАЗОВ № 2 (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000040KD00EX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">B</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000001D6V0FXX_05_0008"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">12.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем корпуса дроссельной заслонки с электродвигателем в сборе.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Отсоедините разъем датчика положения педали акселератора.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Отсоедините разъем датчика положения распредвала (впускных клапанов ряда 1).</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Отсоедините разъем датчика положения распредвала (впускных клапанов ряда 2).</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Отсоедините разъем датчика положения распредвала (выпускных клапанов ряда 1).</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Отсоедините разъем датчика положения распредвала (выпускных клапанов ряда 2).</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Отсоедините разъем комплекта клапана системы снижения токсичности отработавших газов.</font><br></p></li></ol>
+<ol class="s2">
+<li value="8"><p><font class="ptxt">Отсоедините разъем комплекта клапана системы снижения токсичности отработавших газов № 2.</font><br></p></li></ol>
+<ol class="s2">
+<li value="9"><p><font class="ptxt">Отсоедините разъем контактного датчика давления масла усилителя рулевого управления.</font><br></p></li></ol>
+<ol class="s2">
+<li value="10"><p><font class="ptxt">Отсоедините разъемы ECM.</font><br></p></li></ol>
+<ol class="s2">
+<li value="11"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление (при проверке на короткое замыкание):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+			"><col align=""></colgroup><colgroup align="" width="33%
+			"><col align=""></colgroup><colgroup align="" width="33%
+			"><col align=""></colgroup><tr><td align="center">Контакты для подключения диагностического прибора<br></td><td align="center">Условие<br></td><td align="center">Заданные условия<br></td></tr><tr><td align="center">G56-4 (VCPA) - масса<br></td><td align="center">Всегда<br></td><td align="center">10 кОм или более<br></td></tr><tr><td align="center">G56-2 (VCP2) - масса<br></td><td align="center">Всегда<br></td><td align="center">10 кОм или более<br></td></tr><tr><td align="center">C36-13 (VCTA) - масса<br></td><td align="center">Всегда<br></td><td align="center">10 кОм или более<br></td></tr><tr><td align="center">C34-15 (VCV1) - масса<br></td><td align="center">Всегда<br></td><td align="center">10 кОм или более<br></td></tr><tr><td align="center">C34-16 (VCV2) - масса<br></td><td align="center">Всегда<br></td><td align="center">10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="12"><p><font class="ptxt">Подсоедините разъемы ECM.</font><br></p></li></ol>
+<ol class="s2">
+<li value="13"><p><font class="ptxt">Подсоедините разъем корпуса дроссельной заслонки с электродвигателем в сборе.</font><br></p></li></ol>
+<ol class="s2">
+<li value="14"><p><font class="ptxt">Подсоедините разъем датчика положения педали акселератора.</font><br></p></li></ol>
+<ol class="s2">
+<li value="15"><p><font class="ptxt">Подсоедините разъем датчика положения распредвала (впускных клапанов ряда 1).</font><br></p></li></ol>
+<ol class="s2">
+<li value="16"><p><font class="ptxt">Подсоедините разъем датчика положения распредвала (впускных клапанов ряда 2).</font><br></p></li></ol>
+<ol class="s2">
+<li value="17"><p><font class="ptxt">Подсоедините разъем датчика положения распредвала (выпускных клапанов ряда 1).</font><br></p></li></ol>
+<ol class="s2">
+<li value="18"><p><font class="ptxt">Подсоедините разъем датчика положения распредвала (выпускных клапанов ряда 2).</font><br></p></li></ol>
+<ol class="s2">
+<li value="19"><p><font class="ptxt">Подсоедините разъем комплекта клапана системы снижения токсичности отработавших газов.</font><br></p></li></ol>
+<ol class="s2">
+<li value="20"><p><font class="ptxt">Подсоедините разъем комплекта клапана системы снижения токсичности отработавших газов № 2.</font><br></p></li></ol>
+<ol class="s2">
+<li value="21"><p><font class="ptxt">Подсоедините разъем контактного датчика давления масла усилителя рулевого управления.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ECM (<a href="#" onclick="javascript:openSeePage('seepage', 'RM00000329201OX');return false;">Нажмите здесь</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

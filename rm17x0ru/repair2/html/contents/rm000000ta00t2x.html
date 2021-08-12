@@ -1,0 +1,160 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Techdoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000TA00T2X"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; P0617 &nbsp;&nbsp; Высокий уровень сигнала в цепи реле стартера</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>для подготовки <a href="#" onclick="openSeePage('ppr','RM000000TA00T2X');return false;">Нажмите здесь</a></h2></p><br clear="all"><a name="RM000000TA00T2X_08"></a><h2>ОПИСАНИЕ</h2><font class="ptxt">При прокручивании коленчатого вала двигателя стартером на контакт STA блока ECM подается напряжение аккумуляторной батареи.</font><br><font class="ptxt">Если ECM обнаруживает сигнал стартера (STA) во время движения автомобиля, регистрируется неисправность в цепи STA. ЕСМ включает контрольную лампу MIL и регистрирует код DTC.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="" width="12%
+			"><col align=""></colgroup><colgroup align="" width="44%
+			"><col align=""></colgroup><colgroup align="" width="44%
+			"><col align=""></colgroup><tr><td align="center">№ DTC<br></td><td align="center">Условие обнаружения DTC<br></td><td align="center">Неисправный участок<br></td></tr><tr><td align="center">P0617<br></td><td>При выполнении условий (a), (b) и (c) в течение 20 с на ECM подается напряжение (+B) аккумуляторной батареи величиной не менее 10,5 В (логика диагностирования за 1 поездку):<br><ol style="list-style-type: none"><li class="itm">(а) Скорость автомобиля превышает 20 км/час (12,4 мили в час).<br></li><li class="itm">(b) Частота вращения коленчатого вала двигателя превышает 1000 об/мин.<br></li><li class="itm">(c) Сигнал STA во включенном состоянии.<br></li></ol></td><td><ol style="list-style-type: disc"><li class="itm">Короткое замыкание в цепи сигнала стартера<br></li><li class="itm">Пусковой переключатель муфты сцепления в сборе*1<br></li><li class="itm">Датчик положения паркинга/нейтрали в сборе*2<br></li><li class="itm">Замок зажигания в сборе<br></li><li class="itm">ECM<br></li></ol></td></tr></table><ol style="list-style-type: none"><li class="itm">*1: Для моделей с механической трансмиссией<br></li><li class="itm">*2: Для моделей с автоматической трансмиссией<br></li></ol><br clear="all"><a name="RM000000TA00T2X_05"></a><h2>СХЕМА СОЕДИНЕНИЙ</h2><div class="full"><br><img src="../../img/a00jvbre01.png" name="A00JVBRE01" alt="A00JVBRE01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/a00jvbre03.png" name="A00JVBRE03" alt="A00JVBRE03" border="1" class="full"></div><br clear="all"><br clear="all"><a name="RM000000TA00T2X_06"></a><h2>ПОСЛЕДОВАТЕЛЬНОСТЬ ПРОВЕРКИ</h2><p><dl class="caution"><dt class="cautionTitle">ПРИМЕЧАНИЕ:</dt><dt class="cautionTitle"></dt></dl><dl class="caution"><dd class="caution">Перед выполнением следующей процедуры проверки проверьте предохранители цепей, относящихся к данной системе.</dd></dl></p><p><dl class="reference"><dt class="referenceTitle">УКАЗАНИЕ:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Следующая блок-схема выполнения диагностики приведена для случаев, когда коленчатый вал двигателя нормально прокручивается стартером.<br>Если коленчатый вал двигателя не прокручивается, обратитесь к таблице признаков неисправностей (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000SXO01NX');return false;">Нажмите здесь</a>).<br></li><li class="atten4">С помощью портативного диагностического прибора считайте фиксированные параметры. Одновременно с записью в память кода DTC ECM сохраняет параметры состояния автомобиля и условий движения как данные фиксированного набора параметров. При поиске неисправностей фиксированные параметры позволяют определить, двигался ли автомобиль в момент возникновения неисправности или нет, был ли прогрет двигатель и пр.<br></li></ol></p><a name="RM000000TA00T2X_11_0001"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.СНИМИТЕ ПОКАЗАНИЯ ПОРТАТИВНОГО ДИАГНОСТИЧЕСКОГО ПРИБОРА (STARTER SIGNAL)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Подсоедините портативный диагностический прибор к DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Включите зажигание и портативный диагностический прибор.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Войдите в следующие меню: Powertrain / Engine and ECT / Data List / Starter Signal.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">При включенном зажигании и запущенном двигателе проверьте значение, отображаемое на экране портативного диагностического прибора.</font><br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="50%
+			"><col align=""></colgroup><colgroup align="center" width="50%
+			"><col align=""></colgroup><tr><td>Условие<br></td><td>Сигнал стартера<br></td></tr><tr><td>Замок зажигания в положении ON (ВКЛ)<br></td><td>OFF (ВЫКЛ)<br></td></tr><tr><td>Двигатель запущен<br></td><td>ON (ВКЛ)<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Результат&nbsp;
+					</span></caption><colgroup align="center" width="50%
+			"><col align=""></colgroup><colgroup align="center" width="50%
+			"><col align=""></colgroup><tr><td>Результат<br></td><td>Следующий шаг<br></td></tr><tr><td>OK<br></td><td>А<br></td></tr><tr><td>NG (для моделей с механической трансмиссией)<br></td><td>B<br></td></tr><tr><td>NG (для моделей с автоматической трансмиссией)<br></td><td>C<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM000000TA00T2X_11_0004">Перейдите к шагу 2</a></td></tr></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">C</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM000000TA00T2X_11_0071">Перейдите к шагу 6</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">А</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ПРОВЕРЬТЕ, НЕТ ЛИ ЭПИЗОДИЧЕСКИХ НЕИСПРАВНОСТЕЙ (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000PDQ0M4X');return false;">Нажмите здесь</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM000000TA00T2X_11_0004"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">2.ПРОВЕРЬТЕ ЗАМОК ЗАЖИГАНИЯ В СБОРЕ</td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a00k07de13.png" name="A00K07DE13" alt="A00K07DE13" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">Отсоедините разъем замка зажигания.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Положение выключателя<br></td><td>Заданные условия<br></td></tr><tr><td>Между любыми контактами<br></td><td>LOCK (ЗАБЛОКИР)<br></td><td>10 кОм или более<br></td></tr><tr><td>2 (AM1) - 1 (ST1)<br></td><td>START (ПУСК)<br></td><td>Менее 1 Ом<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Обозначения на рисунке&nbsp;
+					</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Устройство с неподсоединенным жгутом проводов<br>(замок зажигания в сборе)<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Подсоедините разъем замка зажигания.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ЗАМОК ЗАЖИГАНИЯ В СБОРЕ (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000YK101VX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000TA00T2X_11_0041"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">3.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ЗАМОК ЗАЖИГАНИЯ В СБОРЕ &ndash; ПУСКОВОЙ ПЕРЕКЛЮЧАТЕЛЬ МУФТЫ СЦЕПЛЕНИЯ В СБОРЕ)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем пускового переключателя муфты сцепления в сборе.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Отсоедините разъем замка зажигания.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><br clear="all"><p><dl class="spec"><dt class="spec">Номинальное сопротивление:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>Для моделей с левосторонним рулевым управлением&nbsp;
+					</span></caption><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>G2-1 (ST1) или A41-2 - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>Для моделей с правосторонним рулевым управлением&nbsp;
+					</span></caption><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>G2-1 (ST1) или r2-2 - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем пускового переключателя муфты.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Подсоедините разъем замка зажигания.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000TA00T2X_11_0042"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">4.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ПУСКОВОЙ ПЕРЕКЛЮЧАТЕЛЬ МУФТЫ СЦЕПЛЕНИЯ В СБОРЕ &ndash; РЕЛЕ СТАРТЕРА [ST])</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем пускового переключателя муфты сцепления в сборе.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Извлеките реле стартера (ST) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><br clear="all"><p><dl class="spec"><dt class="spec">Номинальное сопротивление:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>Для моделей с левосторонним рулевым управлением&nbsp;
+					</span></caption><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>Контакт 1 реле стартера (ST) или A41-1 - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>Для моделей с правосторонним рулевым управлением&nbsp;
+					</span></caption><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>Контакт 1 реле стартера (ST) или r2-1 - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем пускового переключателя муфты.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Установите реле стартера (ST).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000TA00T2X_11_0043"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">5.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ПУСКОВОЙ ПЕРЕКЛЮЧАТЕЛЬ МУФТЫ СЦЕПЛЕНИЯ В СБОРЕ &ndash; ECM)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем ЭБУ.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Отсоедините разъем пускового переключателя муфты сцепления в сборе.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Извлеките реле стартера (ST) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><br clear="all"><p><dl class="spec"><dt class="spec">Номинальное сопротивление:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>Для моделей с левосторонним рулевым управлением&nbsp;
+					</span></caption><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>A41-1 или G60-8 (STA) - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>Для моделей с правосторонним рулевым управлением&nbsp;
+					</span></caption><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>r2-1 или G60-8 (STA) - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Подсоедините разъем ECM.</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Подсоедините разъем пускового переключателя муфты.</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Установите реле стартера (ST).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ECM (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000VW201IX');return false;">Нажмите здесь</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM000000TA00T2X_11_0071"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">6.ПРОВЕРЬТЕ ЗАМОК ЗАЖИГАНИЯ В СБОРЕ</td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a00k07de13.png" name="A00K07DE13" alt="A00K07DE13" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">Отсоедините разъем замка зажигания.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Положение выключателя<br></td><td>Заданные условия<br></td></tr><tr><td>Между любыми контактами<br></td><td>LOCK<br></td><td>10 кОм или более<br></td></tr><tr><td>2 (AM1) - 1 (ST1)<br></td><td>START (ПУСК)<br></td><td>Менее 1 Ом<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Обозначения на рисунке&nbsp;
+					</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Устройство с неподсоединенным жгутом проводов<br>(замок зажигания в сборе)<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Подсоедините разъем замка зажигания.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ЗАМОК ЗАЖИГАНИЯ В СБОРЕ (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000YK101VX');return false;">Нажмите здесь</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000TA00T2X_11_0072"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">7.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ЗАМОК ЗАЖИГАНИЯ В СБОРЕ &ndash; ДАТЧИК ПОЛОЖЕНИЯ ПАРКИНГА/НЕЙТРАЛИ)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем датчика положения паркинга/нейтрали.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Отсоедините разъем замка зажигания.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>G2-1 (ST1) или C40-4 - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем датчика положения паркинга/нейтрали.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Подсоедините разъем замка зажигания.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000TA00T2X_11_0044"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">8.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ДАТЧИК ПОЛОЖЕНИЯ ПАРКИНГА/НЕЙТРАЛИ &ndash; РЕЛЕ СТАРТЕРА [ST])</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем датчика положения паркинга/нейтрали.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Извлеките реле стартера (ST) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>Контакт 1 реле стартера (ST) или C40-5 - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Подсоедините разъем датчика положения паркинга/нейтрали.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Установите реле стартера (ST).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000TA00T2X_11_0046"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">9.ПРОВЕРЬТЕ ЖГУТ ПРОВОДОВ И РАЗЪЕМ (ДАТЧИК ПОЛОЖЕНИЯ ПАРКИНГА/НЕЙТРАЛИ &ndash; ECM)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Отсоедините разъем датчика положения паркинга/нейтрали.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Отсоедините разъем ЭБУ.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Извлеките реле стартера (ST) из блока реле моторного отсека.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Измерьте сопротивление в соответствии со значениями, приведенными в таблице ниже.</font><br><p><dl class="spec"><dt class="spec">Номинальное сопротивление:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><colgroup align="center" width="33%
+			"><col align=""></colgroup><tr><td>Контакты для подключения диагностического прибора<br></td><td>Условие<br></td><td>Заданные условия<br></td></tr><tr><td>C40-5 или G60-8 (STA) - масса<br></td><td>Всегда<br></td><td>10 кОм или более<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Подсоедините разъем датчика положения паркинга/нейтрали.</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Подсоедините разъем ECM.</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Установите реле стартера (ST).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ОТРЕМОНТИРУЙТЕ ИЛИ ЗАМЕНИТЕ ЖГУТ ПРОВОДОВ ИЛИ РАЗЪЕМ</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">ЗАМЕНИТЕ ECM (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000VW201IX');return false;">Нажмите здесь</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

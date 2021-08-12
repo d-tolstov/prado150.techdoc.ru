@@ -1,0 +1,63 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Techdoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000003ERM01AX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>СИСТЕМА ПЕРЕДАЧИ ДАННЫХ CAN (для моделей с правосторонним рулевым управлением и системой посадки и запуска) &gt; ОПИСАНИЕ СИСТЕМЫ</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>для подготовки <a href="#" onclick="openSeePage('ppr','RM000003ERM01AX');return false;"> Нажмите здесь</a></h2></p><br clear="all" class="beforePng"><a name="RM000003ERM01AX_z0"></a><br clear="all"><a name="RM17X0E___0000DQ10000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">КРАТКОЕ ОПИСАНИЕ</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">CAN (Controller Area Network &ndash; сеть контроллеров) &ndash; это последовательная система обмена данными, работающая в реальном времени. Система мультиплексной передачи данных автомобиля имеет высокую скорость передачи данных (500, 250 кбит/с) и функции обнаружения неисправностей.</font><br></p></li>
+<li><p><font class="ptxt">В системе CAN данные передаются дифференциальным напряжением между линиями шины CANH и CANL.</font><br></p></li>
+<li><p><font class="ptxt">Большинство установленных на автомобиле блоков ЭБУ (датчиков) работают, поддерживая обмен данными друг с другом.</font><br></p></li>
+<li><p><font class="ptxt">Шина CAN имеет 2 резистора сопротивлением 120 Ом, которые необходимы для обмена данными с использованием главной шины.</font><br></p></li></ol><br clear="all"><a name="RM17X0E___0000DQ10000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Главная шина</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Главной шиной называется жгут проводов между двумя конечными цепями на шине (линия связи). Это &ndash; главная шина в системе передачи данных CAN.</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">Вспомогательная шина</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Вспомогательной шиной называется жгут проводов, отходящий от главной шины к ЭБУ или датчику.</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">Конечные цепи</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Конечная цепь преобразует ток сигнала передачи данных CAN в напряжение шины. Она состоит из резистора и конденсатора. На шине должно быть две конечных цепи.</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">Разъем распределительного блока шины CAN</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Распределительный блок шины CAN сконструирован так, что он может использоваться для передачи данных CAN, имеющей конечные цепи, и для передачи данных CAN, которая не имеет конечных цепей.</font><br></p></li></ol></p></li></ol><br clear="all"><a name="RM17X0E___0000DQ10000013step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">ОПИСАНИЕ ЦЕПИ</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Шина V1, шина V2, шина MS, шина распределения питания и шина силовой передачи имеют конечные цепи с сопротивлением 120 Ом х 2. Таким образом обеспечивается высокоскоростная передача данных со скоростью 250 и 500 кб/с.</font><br></p></li></ol><br clear="all"><a name="RM17X0E___0000DQ10000014step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">ЭБУ ИЛИ ДАТЧИКИ, КОТОРЫЕ ОБМЕНИВАЮТСЯ ДАННЫМИ ПОСРЕДСТВОМ СИСТЕМЫ ПЕРЕДАЧИ ДАННЫХ CAN</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">ECM</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ распределения питания</font><br></p></li>
+<li><p><font class="ptxt">Главный ЭБУ кузова (бортовой ЭБУ сети мультиплексной связи)</font><br></p></li>
+<li><p><font class="ptxt">Электромагнитный клапан главного цилиндра (ЭБУ системы противоскольжения)</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ полного привода</font><br></p></li>
+<li><p><font class="ptxt">Датчик рысканья в сборе</font><br></p></li>
+<li><p><font class="ptxt">DLC3</font><br></p></li>
+<li><p><font class="ptxt">Витой кабель в сборе (датчик угла поворота рулевого колеса)</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ рулевого управления с усилителем</font><br></p></li>
+<li><p><font class="ptxt">Дисплей модуля системы навигации и индикации (AVN)*1</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ сертификации</font><br></p></li>
+<li><p><font class="ptxt">Центральный блок управления системы SRS</font><br></p></li>
+<li><p><font class="ptxt">Щиток приборов в сборе</font><br></p></li>
+<li><p><font class="ptxt">Блок управления системой кондиционирования в сборе</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ управления подвеской*2</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ устройства поворота фар (ЭБУ системы AFS)*3</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ ремней безопасности*4</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ стабилизаторов*5</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ помощи при движении*6</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ системы помощи при парковке*7</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ предупреждения о недопустимой дистанции*8</font><br></p></li>
+<li><p><font class="ptxt">Переключатель электропривода правого переднего сиденья*9</font><br></p></li>
+<li><p><font class="ptxt">Мультиплексный ЭБУ регулировки наклона и телескопического изменения высоты*10</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ переключателя помощи при движении*11</font><br></p></li>
+<li><p><font class="ptxt">ЭБУ трансмиссии*12</font><br><ol style="list-style-type: none"><li class="itm">*1: для моделей с системой навигации<br></li><li class="itm">*2: для моделей с пневматической подвеской<br></li><li class="itm">*3: для моделей с системой адаптивного переднего освещения<br></li><li class="itm">*4: для моделей с предаварийной системой безопасности<br></li><li class="itm">*5: для моделей с кинетической динамической системой подвески<br></li><li class="itm">*6: для моделей с динамической радарной системой круиз-контроля<br></li><li class="itm">*7: для моделей с мониторной системой помощи при парковке и/или мониторной системой бокового обзора<br></li><li class="itm">*8: для моделей с сенсорной системой помощи при парковке TOYOTA (с 8 датчиками)<br></li><li class="itm">*9: для моделей с запоминающим устройством положения сиденья<br></li><li class="itm">*10: для моделей с наклонной телескопической рулевой колонкой с электроприводом<br></li><li class="itm">*11: для моделей с многофункциональным переключателем<br></li><li class="itm">*12: для моделей с 1KD-FTV<br></li></ol></p></li></ol><br clear="all"><a name="RM17X0E___0000DQ10000015step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">ДИАГНОСТИЧЕСКИЕ КОДЫ ДЛЯ СИСТЕМЫ ПЕРЕДАЧИ ДАННЫХ CAN</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Коды DTC для системы передачи данных CAN: U0073, U0100, U0101, U0104, U0114, U0122, U0123, U0124, U0126, U0129, U0131, U0132, U0139, U0140, U0142, U0151, U0155, U0164, U0182, U0208, U0235, U0327, U1000, U1002, U1100, U110B, U1104, U1110, U1114, U1115, U1121, U1133, B2621 и B2624.</font><br></p></li></ol><br clear="all"><a name="RM17X0E___0000DQ10000016step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">ПРИМЕЧАНИЯ ПО ДИАГНОСТИКЕ</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Неисправность на шине CAN (линии связи) можно определить посредством DLC3 (за исключением тех случаев, когда имеется обрыв на вспомогательной шине DLC3).</font><br></p></li>
+<li><p><font class="ptxt">Коды DTC для системы передачи данных CAN можно проверить, используя портативный диагностический прибор.</font><br></p></li>
+<li><p><font class="ptxt">Система передачи данных CAN не может обнаруживать неисправности вспомогательной шины DLC3, несмотря на то, что DLC3 также подключен к системе CAN.</font><br></p></li></ol><br clear="all"><a name="RM17X0E___0000DQ10000017step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">КАК РАЗЛИЧАТЬ РАЗЪЕМЫ РАСПРЕДЕЛИТЕЛЬНОГО БЛОКА ШИНЫ CAN</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">В системе передачи данных CAN все разъемы, подключенные к распределительному блоку шины CAN, имеют одинаковую форму.</font><br><font class="ptxt">Разъемы, подключенные к распределительному блоку шины CAN, можно различать по цвету шин и соединительной части разъема.</font><br><p><dl class="reference"><dt class="referenceTitle">УКАЗАНИЕ:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">См. раздел "Контакты ЭБУ" (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000XVK08UX');return false;">Нажмите здесь</a>) для определения цвета шин или типа соединительной поверхности.</dd></dl></p></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

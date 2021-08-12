@@ -1,0 +1,42 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Techdoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000VR600AX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>СИСТЕМА ECD &gt; ПРОВЕРКА / СБРОС КОДОВ DTC</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>для подготовки <a href="#" onclick="openSeePage('ppr','RM000000VR600AX');return false;"> Нажмите здесь</a></h2></p><br clear="all" class="beforePng"><a name="RM000000VR600AX_z0"></a><p><dl class="caution"><dt class="cautionTitle">ПРИМЕЧАНИЕ:</dt><dt class="cautionTitle"></dt></dl><dl class="caution"><dd class="caution">Intelligent tester only:</dd></dl><ol style="list-style-type: none"><li class="atten3">When the diagnosis system is changed from normal mode to check mode or vice versa, all the DTCs and freeze frame data recorded in normal mode will be cleared. Before changing modes, always check and make a note of any DTCs and freeze frame data.<br></li></ol></p><br clear="all"><a name="RM17X0E___000017N0000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK DTC (using the intelligent tester)</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li>
+<li><p><font class="ptxt">Turn the ignition switch to ON and turn the tester on.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a0093z8e03.png" name="A0093Z8E03" alt="A0093Z8E03" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Enter the following menus: Powertrain / Engine and ECT / DTC.</font><br></p></li>
+<li><p><font class="ptxt">Check and make a note of DTCs and freeze frame data.</font><br></p></li>
+<li><p><font class="ptxt">Confirm the details of the DTCs (See page <a href="#" onclick="javascript:openSeePage('seepage', 'RM000000VQT00AX');return false;">Нажмите здесь</a>).</font><br></p></li></ol><br clear="all"><a name="RM17X0E___000017N0000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK DTC (not using the intelligent tester)</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a0096qae07.png" name="A0096QAE07" alt="A0096QAE07" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Turn the ignition switch to ON.</font><br></p></li>
+<li><p><font class="ptxt">Using SST, connect terminals 13 (TC) and 4 (CG) of the DLC3.</font><br><dl class="sst"><dt class="sst">SST</dt><dd class="sst">09843-18040&nbsp;&nbsp;<br></dd></dl></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a0097ire11.png" name="A0097IRE11" alt="A0097IRE11" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Read the DTCs by observing the MIL. If no DTC is stored, the MIL blinks as shown in the illustration.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a0094sge02.png" name="A0094SGE02" alt="A0094SGE02" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Example</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">DTCs 12 and 31 are stored and the MIL starts outputting the DTCs as shown in the illustration. The MIL blinking pattern of DTC 12 will be output first.</font><br><p><dl class="reference"><dt class="referenceTitle">УКАЗАНИЕ:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">If 2 or more DTCs are stored, the MIL will output the DTCs in numerical order.</dd></dl></p></p></li>
+<li><p><font class="ptxt">A 2.5 second pause will occur. This pause will occur between the MIL blinking patterns of each DTC.</font><br></p></li>
+<li><p><font class="ptxt">The MIL blinking pattern of DTC 31 will be output.</font><br></p></li>
+<li><p><font class="ptxt">A 4.5 second pause will occur. This pause will occur when the MIL blinking pattern is the last of a string of multiple DTCs.</font><br></p></li>
+<li><p><font class="ptxt">The MIL will repeat the output of the string of DTCs again.</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">Check the details of the malfunction using the DTC chart (See page <a href="#" onclick="javascript:openSeePage('seepage', 'RM000000VQT00AX');return false;">Нажмите здесь</a>).</font><br></p></li>
+<li><p><font class="ptxt">After completing the check, disconnect terminals 13 (TC) and 4 (CG) to turn off the output.</font><br></p></li>
+<li><p><font class="ptxt">Confirm the details of the DTCs (See page <a href="#" onclick="javascript:openSeePage('seepage', 'RM000000VQT00AX');return false;">Нажмите здесь</a>).</font><br></p></li></ol><br clear="all"><a name="RM17X0E___000017N0000013step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CLEAR DTCS AND FREEZE FRAME DATA (using the intelligent tester)</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a0094mce04.png" name="A0094MCE04" alt="A0094MCE04" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li>
+<li><p><font class="ptxt">Turn the ignition switch to ON (do not start the engine) and turn the tester on.</font><br></p></li>
+<li><p><font class="ptxt">Enter the following menus: Powertrain / Engine and ECT / DTC / Clear.</font><br></p></li>
+<li><p><font class="ptxt">Clear DTCs and freeze frame data by pressing the YES button on the tester.</font><br></p></li></ol><br clear="all"><a name="RM17X0E___000017N0000014step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CLEAR DTCS AND FREEZE FRAME DATA (not using the intelligent tester)</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a009a8ee01.png" name="A009A8EE01" alt="A009A8EE01" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Perform either one of the following operations.</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Remove the EFI fuse from the engine room relay block, located inside the engine compartment, for more than 1 minute.</font><br><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+			"><col align=""></colgroup><colgroup align="" width="90%
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Engine Room Relay Block<br></td></tr><tr><td align="center">*2<br></td><td>EFI Fuse<br></td></tr></table></p></li>
+<li><p><font class="ptxt">Disconnect the cable from the negative (-) battery terminal for more than 1 minute.</font><br><p><dl class="caution"><dt class="cautionTitle">ПРИМЕЧАНИЕ:</dt><dt class="cautionTitle"></dt></dl><dl class="caution"><dd class="caution">After reconnecting the battery cable, the radio and clock need to be adjusted as they were previously.</dd></dl></p></p></li></ol></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>
